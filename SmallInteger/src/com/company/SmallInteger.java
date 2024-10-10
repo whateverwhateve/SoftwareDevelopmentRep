@@ -18,6 +18,8 @@ public class SmallInteger extends Number implements Comparable<SmallInteger> {
      */
     final int MAX_MAG = 10000;
 
+    final int MIN_MAG = 0;
+
     /**
      * Constructor creates new object from a String value
      *
