@@ -16,7 +16,7 @@ public class SmallInteger extends Number implements Comparable<SmallInteger> {
     /**
      * field of max possible magnitude of a number
      */
-    final int NEW_MAX_MAG = 20000;
+    final int MAX_MAG = 10000;
 
     /**
      * Constructor creates new object from a String value
@@ -26,7 +26,7 @@ public class SmallInteger extends Number implements Comparable<SmallInteger> {
      */
     public SmallInteger(String val) throws SmallIntegerException {
         int intVal = Integer.parseInt(val);
-        if (Math.abs(intVal) > NEW_MAX_MAG)
+        if (Math.abs(intVal) > MAX_MAG)
             throw new SmallIntegerException("Absolute value is bigger than 10^4", intVal);
 
         if (intVal > 0) {
@@ -49,7 +49,7 @@ public class SmallInteger extends Number implements Comparable<SmallInteger> {
      * @throws SmallIntegerException if value of a number is above the limit
      */
     public SmallInteger(int val) throws SmallIntegerException {
-        if (Math.abs(val) > NEW_MAX_MAG)
+        if (Math.abs(val) > MAX_MAG)
             throw new SmallIntegerException("Absolute value is bigger than 10^4", val);
 
         if (val > 0) {
