@@ -16,7 +16,7 @@ public class SmallInteger extends Number implements Comparable<SmallInteger> {
     /**
      * field of max possible magnitude of a number
      */
-    final int MAX_MAG = 10000;
+    final int MAX_MAG = 100000;
 
     final int MIN_MAG = 0;
 
