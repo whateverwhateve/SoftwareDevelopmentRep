@@ -1,2 +1,2 @@
 # SoftwareDevelopmentRep
- My first local repository
+ My SmallInteger Repository
